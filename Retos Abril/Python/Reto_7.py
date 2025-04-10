@@ -1,6 +1,6 @@
 import random
 
-pasos = 20
+distancia = input("Distancia carrera")
 partcipantes = int(input("Numero de participantes: "))
 
 # Lista para guardar la distancia final recorrida por cada caracol
@@ -12,7 +12,7 @@ ganador = ""
 # Simulamos la carrera: cada caracol avanza una cantidad aleatoria entre 1 y 6 por cada paso
 for participante in range(partcipantes):
     caracol = 0
-    for i in range(pasos + 1):
+    for i in range(distancia):
         caracol += random.randint(1, 6)
     resultado.append(caracol)
 
