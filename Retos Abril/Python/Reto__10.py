@@ -23,15 +23,15 @@ elif 5 <= cajas < 15:
     # Caso: entre 5 y 14 cajas, se aplican gastos de envío de 10€
     imprimir_ticket(cajas, 10, 0, total + 10)
 
-elif cajas < 20:
-    # Caso: entre 15 y 19 cajas (precio total < 120€), sin gastos de envío ni promoción
+elif total < 120:
+    # Caso precio total < 120€, sin gastos de envío ni promoción
     print(f"No puedes optar a la promoción. Te faltan {120 - total}€.")
     imprimir_ticket(cajas, 0, 0, total)
 
-elif 20 <= cajas < 42:
-    # Caso: entre 20 y 41 cajas (precio total entre 120€ y 249.99€), 5% de descuento sin gastos de envío
+elif 120 <= total < 250:
+    # Caso: precio total entre 120€ y 249.99€, 5% de descuento sin gastos de envío
     imprimir_ticket(cajas, 0, 5, total * 0.95)
 
 else:
-    # Caso: 42 o más cajas (precio total ≥ 250€), 10% de descuento sin gastos de envío
+    # Caso precio total ≥ 250€, 10% de descuento sin gastos de envío
     imprimir_ticket(cajas, 0, 10, total * 0.90)
