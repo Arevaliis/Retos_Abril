@@ -1,13 +1,12 @@
 import time
 
-hora = 0
-minuto = 0
-segundos = 0
+hora, minuto, segundos = 0,0,0
 
 try:
     tiempo = int(input("Introduce el numero de segundos que desea contar: "))
     for i in range(0, tiempo + 1):
-        time.sleep(1)  # Pausa el programa durante 1 segundo para simular el cronómetro
+        time.sleep(1)  # Pausa el programa durante 1 segundo para simular el cronómetro.
+                       # Si vas a ejecutarlo para comprobar que funcione correctamente comenta esta linea
 
         # Imprime el tiempo en formato hh:mm:ss
         print(f"{"0" + str(hora) if hora < 10 else hora}:"  
@@ -31,7 +30,3 @@ try:
 
 except ValueError:
     print("Debes introducir un número.")
-
-
-
-
