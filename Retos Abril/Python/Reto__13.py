@@ -12,7 +12,7 @@ try:
        if i != 60:
             print(f"{"0" + str(hora) if hora < 10 else hora}:"  
                   f"{"0" + str(minuto) if minuto < 10 else minuto}:"  
-                  f"{"0" + str(segundos) if segundos < 10 else (segundos if i != 60 else "" )}")
+                  f"{"0" + str(segundos) if segundos < 10 else segundos}")
 
         # Sí han pasado exactamente 3600 segundos (1 hora)
        if i % 3600 == 0 and i != 0:
