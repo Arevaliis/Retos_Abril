@@ -6,13 +6,13 @@ palabras = ["Python", "C", "C++", "Java", "JavaScript",
             "R", "Dart", "Elixir", "MATLAB", "Objective-C"]
 
 vidas = 5
-palabra_elegida = random.choice(palabras)
+palabra_elegida = random.choice(palabras).capitalize()
 estaFuncionando = True
 
 while estaFuncionando:
 
     if vidas > 0:
-        respuesta = input("¿En que lenguaje de programacion estoy pensando?: ").title()
+        respuesta = input("¿En que lenguaje de programacion estoy pensando?: ").capitalize()
         if respuesta == palabra_elegida:
             print("Has acertado!!")
             estaFuncionando = False
@@ -20,6 +20,5 @@ while estaFuncionando:
             vidas -= 1
             print(f"Has fallado. Te quedan {vidas} vidas.")
     else:
-        print("Game Over!!")
+        print(f"Game Over!!. El lenguaje era {palabra_elegida}")
         estaFuncionando = False
-
