@@ -19,16 +19,16 @@ if cajas < 5:
     # Caso: el número de cajas es menor al mínimo requerido
     print("Debe comprar minimo 5 cajas")
 
-elif 5 <= cajas < 15:
+elif cajas < 15:
     # Caso: entre 5 y 14 cajas, se aplican gastos de envío de 10€
     imprimir_ticket(cajas, 10, 0, total + 10)
 
-elif total < 120:
+elif cajas < 19:
     # Caso precio total < 120€, sin gastos de envío ni promoción
     print(f"No puedes optar a la promoción. Te faltan {120 - total}€.")
     imprimir_ticket(cajas, 0, 0, total)
 
-elif 120 <= total < 250:
+elif total < 41:
     # Caso: precio total entre 120€ y 249.99€, 5% de descuento sin gastos de envío
     imprimir_ticket(cajas, 0, 5, total * 0.95)
 
