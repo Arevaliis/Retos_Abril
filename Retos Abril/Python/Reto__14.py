@@ -16,7 +16,6 @@ preguntas_respuestas = [
     ("¿Qué es un error de tipo TypeError?: ", "Ocurre cuando se usa un tipo de dato incorrecto"),
 ]
 
-
 def desea_seguir():
     """Pregunta al usuario si desea continuar"""
     respuesta = input("¿Desea seguir?: (S/N)").upper().strip()
@@ -30,11 +29,9 @@ def desea_seguir():
             print("Responda S o N. ")
             return desea_seguir()
 
-
 def anyadir_flashcards(pregunta, respuesta):
     """Añade una nueva tupla de pregunta y respuesta a la lista"""
     return preguntas_respuestas.append((pregunta, respuesta))
-
 
 # Bucle principal del juego
 while estaFuncionando:
