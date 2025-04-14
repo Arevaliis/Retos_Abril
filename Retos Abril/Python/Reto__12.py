@@ -38,5 +38,6 @@ while estaFuncionando:
         # Captura errores si el usuario no introduce un número
         print("Introduzca un Número")
 
+mensaje = f"Son los siguientes: {", ".join(lista_numeros_suerte)}." if len(lista_numeros_suerte) > 0 else ""
 print(
-    f"Hemos obtenido un total de {len(lista_numeros_suerte)} números. Son los siguientes: {", ".join(lista_numeros_suerte)}.")
+    f"Hemos obtenido un total de {len(lista_numeros_suerte)} números. {mensaje}")
