@@ -22,13 +22,9 @@ while estaFuncionando:
         # Si el número es múltiplo de 7 y no ha sido introducido antes
         if numero % 7 == 0 and str(numero) not in lista_numeros_suerte:
             print(f"{numero} es un numero de la suerte!!")
+            lista_numeros_suerte.append(str(numero))
+            estaFuncionando = desea_seguir() # Pregunta si desea seguir
 
-            # Añade el número a la lista de la suerte
-            if str(numero) not in lista_numeros_suerte:
-                lista_numeros_suerte.append(str(numero))
-
-            # Pregunta si desea seguir
-            estaFuncionando = desea_seguir()
         else:
             # Si no es múltiplo de 7 o ya fue introducido antes
             print(f"{numero} no es un numero de la suerte o ya lo has dicho!!")
