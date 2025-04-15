@@ -17,13 +17,3 @@ if valildar_contrasenya(input("Introduzca su contraseña: ")):
     print("Contraseña segura y valida")
 else:
     print("Esta contraseña no cumple con las reglas o no es segura. ")
-
-
-
-
-
-
-
-
-
-
