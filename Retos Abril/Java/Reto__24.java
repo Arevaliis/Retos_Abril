@@ -41,6 +41,7 @@ public class Reto24 {
                 puntuacion += 0.50;
             }
         }
+        scanner.close();
 
         // Muestra la nota final del examen
         System.out.println("Nota examen: " + puntuacion);
