@@ -23,6 +23,7 @@ public class Reto23 {
             // Se lanza si alguna palabra contiene caracteres no válidos (números, símbolos, etc.)
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     /**
